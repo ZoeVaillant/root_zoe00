@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    margin-left: 15px;
+}
+
+.circle{
+    margin: 10px;
+    margin-left: 15px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(255, 219, 233);
+    text-align: center;
+    align-content: center;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+.circle.square{
+    border-radius: unset;
+}
+
+.circle.square.make-round{
+    border-radius: 50%;
+}
+
+.circle.move-me{
+    transform: translateX(300px) rotate(13deg) scale(1.5);
+    transition: all 0.3s ease-in;
+
+}

@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #becfdc;
+}
+
+h1 {
+  font-size: 60px;
+  color: #385369;
+  line-height: 100px;
+  text-shadow: 2px 2px 5px white;
+}
+
+a {
+  color: #385369;
+  rotate: 0deg;
+}
+a:hover {
+  color: rgb(255, 255, 255);
+}
+
+p {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.gif{
+  max-width: 100%;
+  max-height: 100%;
+}
+.center-gif{
+  display: inline-block;
+  overflow: hidden;
+  margin-bottom: -40px;
+  margin-top: -40px;
+  margin-left: -45px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 7px solid white;
+  scale: 60%;
+}

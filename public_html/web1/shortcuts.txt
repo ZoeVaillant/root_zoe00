@@ -1,0 +1,10 @@
+VS CODE
+Cmd + / = comment/uncomment code
+Cmd + S = Save document 
+Shift + Opt/Alt + ↓ = Duplicate lines 
+Command + Shift + P --> Command prompt--> type which one you want (ex.wrap)
+
+BROWSER
+Cmd + Shift + R = Reload (full reaload w. asset files *images, css, Javascript*)
+
+*Cmd = Ctrl on PC

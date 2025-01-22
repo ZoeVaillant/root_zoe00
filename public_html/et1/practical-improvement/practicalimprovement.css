@@ -1,0 +1,60 @@
+*{
+        padding: 0;
+        margin: 5px;
+        box-sizing: border-box;
+    }
+body {
+    background-color: #f1e9e9;
+}
+h1 {
+    font-size: 40px;
+    line-height: 50px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    color: #5c4b4a;
+    text-shadow: 2px 2px 10px white;
+}
+
+ h3 {
+     padding-top: 30px;
+     text-decoration: underline;
+     color: #5c4b4a;
+ }
+
+ main article {
+     display: inline-grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     column-gap: 50px;
+ }
+
+ figcaption {
+     padding-top: -5px;
+     text-decoration: bold;
+     color: #816968;
+ }
+
+ img {
+     border: 3px solid #816968;
+     border-radius: 5px;
+     box-shadow: 2px 2px 10px #655252 ;
+ }
+
+ .title {
+     padding: 10px;
+     text-align: left;
+     background: #b9a8a8;
+     margin: 0;
+     border-radius: 20px;
+     text-align: center;
+ }
+
+ a {
+    color: #ffffff;
+ }
+
+ @media screen and (max-width: 430px) {
+     main article {
+         grid-template-columns: 1fr
+     }
+ }
+ 

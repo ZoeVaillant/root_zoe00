@@ -1,0 +1,29 @@
+* {
+  margin: 5px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dfcdcf;
+}
+
+p {
+  padding: 10px;
+  font-size: 20px;
+}
+
+a{
+  color: #72484e;
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+}
+
+h1 {
+  font-size: 60px;
+  color: #72484e;
+  line-height: 100px;
+  text-shadow: 2px 2px 5px white;
+}

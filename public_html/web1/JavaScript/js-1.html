@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 1</title>
+    <style>
+        body{
+            background-color: rgb(155, 242, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Demo 1</h1>
+    <button id="loader" onclick="loadStuff()">Click Me!</button>
+    <main id="content"></main>
+    <!-- <audio src="sounds/sci-fi-bubble-pop-89059.mp3" controls></audio> -->
+
+
+    <script>
+        alert("Boo! ^^")
+        console.log("You Did It!")
+
+        // This is a comment
+
+        /* This is also a comment */
+
+        /**
+         * Variables
+         * @author...
+         */
+        //dynamic variable "let"
+
+        let myName = "Zoe";
+
+        // a constant variable "const"
+        const pi = 3.14159265;
+
+        //Math operators: + = / *
+
+        console.log("PI x 7 = " + pi * 7);
+
+        // Concatenate Strings (text data) 
+        // with other Strings or dynamic data with +
+
+        /**
+         * F u n c t i o n s
+         */
+        function eatPizza() {
+            alert("Bubbles 🫧");
+        }
+
+        eatPizza();
+        // New ES6 Function
+        let makePizza =  () => {
+            console.log("adding ingredients...and bake")
+        };
+
+        const myContainer = document.getElementById("content");
+        let myAudio = new Audio("sounds/sci-fi-bubble-pop-89059.mp3")
+
+        function loadStuff(){
+            myAudio.play()
+            myContainer.innerHTML = '<p>Hello</p><img src="https://steamuserimages-a.akamaihd.net/ugc/788606529627905791/90F04585B1855FF09A168588456013CF593CAF76/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"/>';
+        }
+       
+    </script>
+</body>
+</html>

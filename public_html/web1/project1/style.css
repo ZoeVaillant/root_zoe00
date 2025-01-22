@@ -1,0 +1,298 @@
+* {
+font-family: "Montserrat Alternates", sans-serif;
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #4693AA;
+    border: 30px solid #2E606F;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+
+#grad {
+    background-image: linear-gradient(to bottom, #4693AA, #30697d);
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.501);
+    padding-top: 100px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 400px 1fr;
+}
+
+.deco {
+    font-size: 100px;
+    align-items: center;
+    color: white;
+}
+
+.left {
+    text-align: right;
+}
+
+.right {
+ transform: scaleX(-1);
+ text-align: right;
+}
+
+.start {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    max-width: 400px;
+    color: white;
+    margin-top: -30px;
+    
+        position: absolute;
+        width: 428px;
+        height: 29px;
+    
+        font-family: 'Montserrat Alternates';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 26px;
+    
+        color: #FFFFFF;
+    
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        transform: rotate(-0.06deg);
+
+}
+
+.gif {
+    text-align: center;
+}
+
+.center-gif {
+    max-width: 100%;
+    height: auto;
+    margin-top: -70px;
+    position: relative;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 7px solid white;
+        box-shadow: 0px 20px 8px rgba(41, 46, 67, 0.64);
+}
+
+.hi {
+    font-display: 400;
+}
+
+.click{
+    font-display: bold;
+}
+
+#AboutMe{
+    padding-top: 50px;
+}
+
+.aboutme {
+    padding-top: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 30px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 150px;
+    max-width: 1190px;
+    background-color: white;
+    text-align: center;
+    font-size: 20px;
+    color: #215A7B;
+}
+
+a{
+    color: white;
+}
+
+h2{
+    font-size: 30px;
+    color: #215A7B;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    top: 90px;
+    z-index: 2;
+    
+}
+
+.interestsimg{
+    align-items: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    background-color: #D0F1FA;
+    border-radius: 300px;
+    width: 80%;
+    /*margin-left: 200px;*/
+    position: relative;
+    margin: 0 auto;
+    padding: 4%;
+    
+}
+
+.interests{
+    padding-top: 40px;
+    padding: 20px;
+    margin-top: 20px;
+    align-items: center;
+    align-content: center;
+    height: fit-content;
+
+}
+
+figure{
+    margin-left: -10px;
+    text-align: center;
+}
+
+img{
+    height: 200px;
+    width: 300px;
+}
+
+figcaption{
+    color: #215A7B;
+    font-size: 25px;
+    text-decoration: bold;
+
+
+}
+
+.ex{
+font-size: 18px;
+padding-top: 10px;
+text-decoration: solid;
+}
+
+#Contacts{
+    padding-top: 60px;
+
+}
+
+.contacts{
+    padding: 20px;
+    margin: auto;
+    margin: 200px;
+    margin-top: 30px;
+    border-radius: 220px;
+    height: 60px;
+    background-color: #80C5DA;
+    font-weight: 700;
+    color: #215A7B;
+}
+
+.contactsimg{
+    display: grid;
+    width: 300px;
+    height: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    left: calc(100% - 250px);
+    top: -65px;
+
+}
+
+footer figure img{
+    height: 50px;
+    width: 50px;
+}
+
+@media only screen and (max-width: 768px){
+    .interestsimg{
+            align-items: center;
+                align-content: center;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                background-color: #D0F1FA;
+                border-radius: 220px;
+                width: 80%;
+                margin: 20px;
+    }
+
+    h1{
+        scale: 0.6;
+        margin-right: 300px;
+        margin-left: -10px;
+        text-align: center;
+    }
+
+    .deco{
+        scale: 0.7;
+        
+    }
+    
+    .right {
+        margin-left: -300px;
+        text-align: right;
+    }
+
+    .start {
+      scale: 0.9;
+      margin-left: -150px;
+      margin-top: -60px;
+        }
+
+    img{
+        scale: 0.8;
+        margin-left: 15px;
+    }
+
+    figcaption{
+        margin-left: 55px;
+    }
+
+    h2{
+        scale: 0.6;
+        top: 75px;
+    }
+
+    .aboutme{
+        scale: 0.9;
+    }
+    .contactsimg{
+        scale: 0.9;
+        margin-left: 25px;
+        margin-top: -35px;
+    }
+    .contacts {
+        padding: 60px;
+        margin: auto;
+        margin: 60px;
+        margin-top: 30px;
+        border-radius: 220px;
+        height: 90px;
+        background-color: #80C5DA;
+        font-weight: 700;
+        color: #215A7B;
+        }
+    footer figure img{
+        margin-top: 80px;
+    }
+    p{
+        text-align: center;
+    }
+}
+
+

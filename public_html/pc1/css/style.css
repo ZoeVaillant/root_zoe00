@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #6d607e;
+  font-size: 60px;
+  line-height: 100px;
+  text-shadow: 2px 2px 5px white;
+}
+
+body {
+  background-color: #d1ccd8;
+}
+
+p {
+  padding: 10px;
+}
+
+a {
+  color: #6d607e;
+  rotate: 0deg;
+  font-size: 20px;
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.gif{
+  max-width: 100%;
+  max-height: 100%;
+  scale: 2;
+}
+.center-gif{
+  display: inline-block;
+  overflow: hidden;
+  margin-bottom: -40px;
+  margin-top: -40px;
+  margin-left: -45px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 7px solid white;
+  scale: 60%;
+
+}

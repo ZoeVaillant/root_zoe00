@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2 - Game Character</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./project2.css">
+</head>
+
+
+
+<body>
+    <div id="panel">Click Here</div>
+    <h1>Blub</h1>
+    <h2>- How Was I Created? -</h2>
+    <div class="img">
+        <img class="bubbleimg" src="./img/Group 1.svg" alt="">
+    </div>
+        <div class="intro">
+            <p>Hello there! This is Blub!</p>
+            <p>Blub is a bubble from heaven! He has accidentally fallen from his home in the sky to Earth, and is trying to find his way back.</p>
+            <p>Blub was first created on Procreate, and then I vectorized him by bringing the Procreate image of him into Figma, lowering the image's opacity, tracing over the image using the pen tool, and filling in each path with its specific color!</p>
+        </div>
+
+        <h3>Character Design</h3>
+        <div id="screenshot">
+            
+            <figure>
+                <img  class="procreate" src="./img/procreate-original.png" alt="">
+                <figcaption>Procreate Drawing -  Original</figcaption>
+                <p>This is my original drawing of this character. I drew it on Procreate!<p>
+            </figure>
+
+            <figure>
+                <img class="outline" src="./img/outline-figma.png" alt="">
+                <figcaption>Figma Drawing - Outline</figcaption>
+                <p>This is the outlined version of the verctorized character. This was done on Figma!</p>
+            </figure>
+
+            <figure>
+                <img class="final" src="./img/final-figma.png" alt="">
+                <figcaption>Figma Drawing - Final</figcaption>
+                <p>This is the finished and colorized vectorized chracter. This was also done on Figma!</p>
+            </figure>
+        </div>
+
+        <div class="wrapper">
+            <!--https://codepen.io/diyorbek0309/pen/mdwbEve -->
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+        </div>
+        
+  <button id="btn" onclick="top.location.href = '../project3/index.html'">Play My game!</button>
+
+    <script>
+
+        const panel = document.getElementById("panel");
+
+        const sound = new Audio ("sounds/sci-fi-bubble-pop-89059.mp3")
+        panel.onclick = function(){
+            this.classList.toggle("slide-right");
+        }
+    </script>
+
+    <h4>This is where I got the codding for the bubble effect on the screen!</h4>
+        <p class="link"><a href="https://codepen.io/diyorbek0309/pen/mdwbEve">Bubble Animation</a></p>
+    
+</body>
+</html>
