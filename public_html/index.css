@@ -5,6 +5,7 @@
 }
 h1{
     text-align: center;
+        margin-top: 50px;
         font-size: 60px;
         color: #335246;
         font-family: Georgia, 'Times New Roman', Times, serif;
@@ -18,7 +19,10 @@ h1{
      rotate: 0deg;
      display: inline-block;
      font-size: 25px;
+ }
 
+ p{
+    text-align: center;
  }
 
  a:hover {
