@@ -19,16 +19,23 @@ h1{
      rotate: 0deg;
      display: inline-block;
      font-size: 25px;
+     opacity: 0.5;
  }
 
- p{
+a:link{
+    transition: opacity 0.5s;
+ }
+
+a:hover {
+     color: #335246;
+     opacity: 1;
+ }
+
+p{
     text-align: center;
  }
 
- a:hover {
-     color: rgb(255, 255, 255);
-     rotate: -5deg;
- }
+ 
  
 .gif{
     text-align: center;

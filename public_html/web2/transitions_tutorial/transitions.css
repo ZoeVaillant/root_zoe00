@@ -61,7 +61,37 @@ img{
     margin-top: 15px;
 }
 
+.img2{
+    width: 400px;
+    height: 400px;
+}
+
 img:hover{
+    opacity: 1;
+}
+
+/*challenge excersie*/
+
+figure{
+    position: relative;
+}
+
+figure img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-top: 70px;
+}
+
+figure .img1{
+    opacity: 1;
+}
+
+figure .img2{
+    opacity: 0;
+}
+
+figure:hover .img2{
     opacity: 1;
 }
 
