@@ -4,6 +4,40 @@
     box-sizing: border-box;
 }
 
+#cards{
+    max-width: 500px;
+    aspect-ratio: 11 / 3;
+    padding: 1em;
+}
+
+a:link, a:visited {
+    color: #ffa988;
+    transition: color 0.5s;
+}
+
+a{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+article{
+    max-width: 300px;
+    background-color: rgba(255, 255, 255, 0.61);
+}
+
+a:-webkit-any-link{
+    cursor: pointer;
+}
+
 body{
     background-color: #ffe6dc;
+}
+
+figure{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
 }
