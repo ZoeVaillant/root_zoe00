@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poiret One", serif;
+}
+
+h1 {
+  text-align: center;
+  padding: 100px;
+  font-size: 100px;
+}
+
+nav {
+  margin-top: 90px;
+  margin-bottom: 250px;
+  text-decoration: none;
+}
+
+nav article {
+  padding: 60px; /*https://www.w3schools.com/css/css_align.asp*/
+  height: 15rem;
+  text-align: center;
+}
+
+nav p {
+  font-size: 50px;
+}
+
+.top {
+  background-color: #be7d7f;
+}
+
+.middle {
+  background-color: #4a6047;
+}
+
+.bottom {
+  background-color: #51331f;
+}
+
+main {
+  margin: 50px;
+}
+
+article h2 {
+  font-size: 100px;
+}

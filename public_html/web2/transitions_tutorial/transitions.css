@@ -7,6 +7,7 @@
 
 a:link {
     transition: opacity 0.5s;
+    padding-left: 2px;
 }
 
 nav{
@@ -47,9 +48,6 @@ p{
     color: black;
 }
 
-a:link{
-    padding-left: 2px;
-}
 
 img{
     opacity: 0.25;

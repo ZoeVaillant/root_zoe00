@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    aspect-ratio: 16/11;
+    object-fit: cover;
+    object-position: top center;
+}
+
+#cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* max-width: 500px; */
+    aspect-ratio: 11 / 3;
+    padding: 1em;
+    gap: 1rem;
+}
+
+#cards a{
+ 
+}
+
+#cards figure{
+    position: relative;
+    border-radius: 1rem 1rem 0 0 ;
+    overflow: hidden;
+    background-color: rgb(33 66 99 / 0.9);
+}
+
+#cards .top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.1;
+    transition: opacity, transform 500ms;
+    transform: translateY(1.7rem);
+
+}
+
+#cards a:hover .top{
+    opacity: 1;
+    transform: translateY(0rem);
+}
+
+#cards section{
+    padding: 0.5rem;
+    background-color: rgb(33 66 99 / 0.9);
+}

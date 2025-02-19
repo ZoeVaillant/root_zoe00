@@ -1,32 +1,32 @@
 * {
     padding: 0;
-    margin: 15;
+    margin: 0;
     box-sizing: border-box;
 }
 
-#cards{
-    max-width: 500px;
-    aspect-ratio: 11 / 3;
-    padding: 1em;
-}
-
-a:link, a:visited {
+h1{
+    font-size: 60px;
+    line-height: 100px;
+    text-shadow: 2px 2px 5px white;
     color: #ffa988;
-    transition: color 0.5s;
+    padding-left: 20px;
 }
 
 a{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffa988;
+    transition: color 0.5s;font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
 }
+
+/*a:link{
+    /* max-width: 300px; */
+   /*height: 290px;*/ 
+
 
 article{
-    max-width: 300px;
-    background-color: rgba(255, 255, 255, 0.61);
+    position: relative;
 }
 
-a:-webkit-any-link{
-    cursor: pointer;
-}
 
 body{
     background-color: #ffe6dc;
@@ -38,6 +38,91 @@ figure{
     padding: 0;
 }
 
-img{
+#cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    /* min-width: 500px; */
+    aspect-ratio: 11 / 3;
+    padding: 2rem;
+    gap: 3rem;
+    
+}
+
+
+#cards img{
     width: 100%;
+    aspect-ratio: 19/ 10;
+    object-fit: cover;
+    object-position: center;
+    top: 0;
+}
+
+
+#cards figure{
+    position: relative;
+    height: 100%;
+    border-radius: 2rem 2rem 0 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+#cards section{
+   padding: 0.5rem;
+   background-color: white;
+   border-radius: 0 0 2rem 2rem;
+}
+
+#cards .top{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity, transform 0.25s;
+    transform: translateY(1.7rem);
+}
+
+#cards a:hover .top{
+    opacity: 1;
+    transform: translateY(0rem);
+}
+
+#cards p{
+    opacity: 0;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#cards a:hover p{
+    opacity: 1;
+    transition: 0.25s;
+}
+
+#cards h3{
+    font-size: 25px;
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 750px) {
+    #cards{
+        grid-template-columns: 1fr 1fr;
+        
+    }
+}
+
+
+
+@media only screen and (min-width: 1250px) {
+    #cards{
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+    #cards{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+    }
+    
 }
