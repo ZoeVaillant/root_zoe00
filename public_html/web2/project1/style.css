@@ -9,10 +9,11 @@ body {
   background-color: white;
 }
 main {
-  margin: 50px;
+  margin: 70px;
 }
 html{
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 h1 {
@@ -77,7 +78,7 @@ h1 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  position: absolute;
+  position: absolute; /*https://stackoverflow.com/questions/1093955/make-the-image-go-behind-the-text-and-keep-it-in-center-using-css   and   https://www.w3schools.com/howto/howto_css_image_text.asp*/
   opacity: 0;
   left: -1px;
   top: 0;
@@ -86,4 +87,49 @@ h1 {
 
 article h2 {
   font-size: 100px;
+}
+
+#dance{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#dance p{
+  font-size: 17px;
+  line-height: 50px;
+  padding-top: 50px;
+}
+
+#painting{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+#painting .img{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+
+}
+
+
+@media screen and (min-width: 1200px ){
+
+#painting{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+#painting .img{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  column-gap: 40px;
+}
+
+.porco, .monet, .tree{
+  width: 100%;
+}
 }
