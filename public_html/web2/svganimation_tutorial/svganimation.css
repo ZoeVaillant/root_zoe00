@@ -47,3 +47,75 @@ p{
     margin-top: 5px;
     color: black;
 }
+
+#svg {
+    transform: scale(2.5) translateX(185px) translateY(118px);
+    position: absolute;
+}
+
+#svg svg{
+    position: relative;
+}
+
+@keyframes backMoves{
+    0%{
+        transform: translateX(-200px);
+    }
+
+    50%{
+        transform: translateX(200px);
+    }
+
+    100%{
+        transform: translateX(-200px);
+    }
+}
+
+.back{
+    animation-name: backMoves;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+@keyframes middleMoves {
+    0% {
+        transform: translateX(200px);
+    }
+
+    50% {
+        transform: translateX(-200px);
+    }
+
+    100% {
+        transform: translateX(200px);
+    }
+}
+
+.middle {
+    animation-name: middleMoves;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+@keyframes frontMoves {
+    0% {
+        transform: translateX(-100px);
+    }
+
+    50% {
+        transform: translateX(100px);
+    }
+
+    100% {
+        transform: translateX(-100px);
+    }
+}
+
+.front {
+    animation-name: frontMoves;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}

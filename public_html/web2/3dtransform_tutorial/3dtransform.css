@@ -51,14 +51,24 @@ div{
 #rectangle{
     width: 200px;
     height: 300px;
-    background-color: #0f2b13;
+    background-color: #0f2b13; transform-style: preserve-3d;
     transform: translate(100px) rotateX(55deg) rotateZ(45deg);
     border-radius: 50px;
     box-shadow: 1px 2px 10px #000a02, 34px 34px 15px #000a027e;
     transition: 0.5s ease-in-out transform, 0.5s ease-in-out box-shadow;
+    z-index: 0;
+   
 }
 
 #rectangle:hover{
     transform: translateX(100px) translateY(-24px) rotateX(55deg) rotateZ(45deg);
     box-shadow: 1px 2px 10px #000a02, 70px 70px 25px #000a026b;
+}
+
+#rectangle p{
+    color: white;
+    transform-style: preserve-3d;
+    transform: translateY(141px) translateZ(67px) translateX(53px) rotateX(-114deg) rotateY(46deg) rotateZ(-23deg); 
+    z-index: 1;
+    text-shadow: 1px 0px 14px #94ffa9;
 }
