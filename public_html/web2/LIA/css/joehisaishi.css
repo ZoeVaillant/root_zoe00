@@ -5,24 +5,58 @@
   }
 
 body{
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+/*for some reason, when I edited the other imgs, the background image got larger*/
+nav {
+  background-color: black;
+  height: 50px;
+  position: sticky;
+  top: 0;
+}
+
+#navtext {
+  text-align: right;
+  padding: 1rem;
+}
+
+#navtext a {
+  color: rgba(255, 255, 255, 0.486);
+  font-size: 20px;
+  font-family: "League Spartan", sans-serif;
+  text-decoration: none;
+}
+
+#navtext a:hover {
+  color: white;
+  transition: 1s;
+}
+
+#navtext .home {
+  margin-right: 5px;
 }
 
 h1{
     font-family: "Bodoni Moda SC", serif;
     font-size: 4rem;
     color: white;
-    margin-bottom: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
     text-align: center;
 }
 
 article{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    justify-content: center;
+    align-self: center;
+}
+
+#about{
+  display: block;
 }
 
 #about p{
@@ -30,42 +64,85 @@ article{
   font-optical-sizing: auto;
   color: rgba(255, 255, 255, 0.66);
   margin-bottom: 1rem;
-  text-align: justify;
+  text-align: left;
   font-size: 1.1rem;
   line-height: 1.4rem;
+  
 }
 
-#imgs img{
-  max-width: 100%;
+#imgs img {
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0);
+  border-radius: 50px;
+  margin-top: 40px;
+
 }
 
-@media screen and (min-width: 1000px) {
+#imgs img:hover {
+  transform: scale(1.02);
+  transition: transform 1s;
+  box-shadow: 0 0 20px white;
+  transition: 0.7s;
+}
+
+
+ iframe {
+  margin-top: 12px;
+   height: 90px;
+   width: 100%;
+  }
+
+@media screen and (min-width: 1400px) {
   
   h1{
-    margin-top: 2rem;
-    margin-bottom: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3.5rem;
     font-size: 5rem;
   }
 
   article{
+    display: grid;
     grid-template-rows: 0fr;
-    grid-template-columns: 1fr 1fr
+    grid-template-columns: 1fr 1fr;
+    column-gap: 6rem;
   }
 
   #about p{
-    font-size: 1.25rem;
-    line-height: 2.8rem;
+    font-size: 1.3rem;
+    line-height: 2.4rem;
     text-align: justify;
   }
-
+#imgs img {
+  max-width: 100%;
+    object-fit: cover;
+  margin-top: 0px;
+}
 
   #imgs{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    margin-left: 4rem;
     column-gap: 3rem;
-    margin-right:2rem;
+    align-items: baseline;  
   }
 
+  iframe {
+    height: 90px;
+  }
+
+}
+
+@media screen  and (min-width: 800px) {
+
+    #imgs {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        column-gap: 3rem;
+        align-items: top;
+      }
+     iframe {
+       height: 90px;
+     }
 }
