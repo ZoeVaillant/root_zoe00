@@ -108,7 +108,7 @@ iframe {
   #about p {
     font-size: 1.3rem;
     line-height: 2.4rem;
-    text-align: justify;
+    text-align: left;
   }
 
   #imgs img {
