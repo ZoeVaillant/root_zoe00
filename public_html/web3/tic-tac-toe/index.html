@@ -4,56 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../tic-tac-toe/index.css">
 </head>
 <body>
-    <article>
-        <h1>Game #1</h1>
-    </article>
+    <main>
+        <header>
+            <h1>Game #1</h1>
+        </header>
 
-    <article id="grid">
         <section>
-            <figure>
-                <p>1</p>
-            </figure>
-
-            <figure>
-                 <p>2</p>
-            </figure>
-
-            <figure>
-                <p>3</p>
-            </figure>
-
-            <figure>
-                <p>4</p>
-            </figure>
-
-            <figure>
-                <p>5</p>
-            </figure>
-
-            <figure>
-                <p>6</p>
-            </figure>
-
-            <figure>
-                <p>7</p>
-            </figure>
-
-            <figure>
-                <p>8</p>
-            </figure>
-
-            <figure>
-                <p>9</p>
-            </figure>
+            <p id="message">message</p>
         </section>
 
         <section>
+            <article id="grille">
+                 <div class="case"></div>
+                 <div class="case"></div>
+                 <div class="case"></div>
+                 <div class="case"></div>
+                 <div class="case"></div>
+                 <div class="case"></div>
+                 <div class="case"></div>
+                 <div class="case"></div>
+                 <div class="case"></div>
+            </article>
+        </section>
+
+        <section>
+            <button id="replay">Jouer Encore</button>
+        </section>
             
-        </section>
-    </article>
-    
+    </main>
+    <script src="../tic-tac-toe/index.js"></script>
 </body>
 </html>

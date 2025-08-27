@@ -4,25 +4,50 @@
     box-sizing: border-box;
 }
 
-h1{
-    text-align: center;
-    font-size: 60px;
-    margin-bottom: 100px;
-    margin-top: 50px;
+body{
+   font-family: "Quicksand", sans-serif;
    
 }
-#grid{
+
+header{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#grille{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     justify-self: center;
     width: 500px;
-    height: 500px
+    height: 500px;
     
 }
 
-#grid figure{
+.case{
+    display: grid;
+    place-items: center;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+div{
+    place-items: center;
+}
+
+#grille div{
+    border: 2px solid rgb(0, 0, 0);
+}
+
+#message{
     text-align: center;
-    border: 2px solid blue;
-    
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+button{
+    display: block;
+    justify-content: center;
 }
