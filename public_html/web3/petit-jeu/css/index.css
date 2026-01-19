@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.arrow {
+    position: absolute;
+    background: none;
+    width: 3em;
+}
+
+#uArrow {
+    top: 0px;
+    width: 100%;
+}
+
+#dArrow{
+    bottom: 0px;
+    width: 100%;
+}
+
+#lArrow{
+    left: 0px;
+    height: 100%;
+    width: 30%;
+}
+
+#rArrow{
+    right: 0px;
+    height: 100%;
+    width: 30%;
+}

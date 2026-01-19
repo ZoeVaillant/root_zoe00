@@ -4,25 +4,55 @@
     box-sizing: border-box;
 }
 
+
 body{
-   font-family: "Quicksand", sans-serif;
-   
+    font-family: "Amatic SC", sans-serif;
+    background-image: url("./imgs/beachwavev7.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    
 }
 
 header{
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    /*text-align: center;
+    font-size: 60px;
+    color: #F8876F;
+    text-shadow: 0px 5px 10px #ffffff;*/
+    justify-self: center;
 }
+
+header img{
+    mix-blend-mode: luminosity;
+    width: 380px;
+    height: auto;
+}
+
+#sand{
+    display: block;
+    width: 357px;
+    height: 410px;
+    background-image: url(./imgs/Sandelements_game\ 7\(v2\).svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    justify-content: center;
+    justify-self: center;
+    align-content: center;
+    
+    
+}
+
 
 #grille{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     justify-self: center;
-    width: 500px;
-    height: 500px;
+    width: 210px;
+    height: 205px;
+    margin-left: 11px;
+    margin-bottom: 12px;
     
 }
 
@@ -33,27 +63,140 @@ header{
     font-weight: 900;
     background-size: contain;
     background-repeat: no-repeat;
+    cursor: url('imgs/shovelcurserv4.png'), pointer;
+    /* z-index: 1; */
 }
+
+#hero {
+    background-image: url(./imgs/waterbackground.webp);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    /* pointer-events: none; */
+    /* z-index: 10; */
+    z-index: -1;
+    transition: opacity 0.6s;
+}
+
+#hero.fin {
+    z-index: 10;
+    opacity: 1;
+}
+
+#hero figure{
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr;
+   align-items: center;
+   justify-items: center;
+}
+
+#hero p{
+    font-size: 100px;
+    color: white;
+}
+
 
 div{
     place-items: center;
 }
 
-#grille div{
+/*#grille div{
     border: 2px solid rgb(0, 0, 0);
+    }*/
+    
+/* #message{
+    justify-self: center;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    
+} */
+
+
+#replay{
+    align-self: center;
+    background-color: #A387D7;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-family: "Amatic SC";
+    color:  #ffffff;
+    font-size: 40px;
+    font-weight: 500;
+    border: none;
+    box-shadow: 0px 0px 40px #bd9ef8;
+    margin-top: 60px;
+    transition: background-color 0.5s;
+
+    /* z-index: 20; */
 }
 
-#message{
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 20px;
+#replay:hover{
+    color: #A387D7;
+    background-color: #ece2fd;
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
 }
 
-#message img{
-    max-width: 60px;
+#button{
+    justify-self: center;
 }
 
-button{
-    display: block;
-    justify-content: center;
+@media screen and (min-width: 730px){
+    header img{
+        width: 800px;
+        height: auto;
+    }
+    
+    #grille{
+        width: 330px;
+        height: 338px;
+    }
+
+    #sand{
+        width: 530px;
+        height: 530px;
+        margin-top: -91px;
+    }
+    
+    #button{
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 2000px){
+
+    #sand{
+        margin-top: -68px;
+        width: 680px;
+        height: 680px;
+        
+    }
+
+    #grille{
+        width: 404px;
+        height: 404px;
+    }
+
+    #replay{
+        padding: 20px 35px;
+        font-size: 50px;
+        margin-top: 70px;
+        border-radius: 25px;
+    }
+
+    #message{
+        margin-bottom: -10px;
+        margin-top: 10px;
+    }
+
 }

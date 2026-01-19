@@ -1,0 +1,523 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#background img{
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    background-attachment: fixed;
+    position: absolute;
+}
+
+
+#background {
+    position: relative;
+}
+
+#outil{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    column-gap: 1rem;
+    margin-left: 10%;
+    margin-top: 15%;
+}
+
+#timer{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: white;
+    font-size: 40px;
+    margin-left: 40%;
+}
+
+#btnRes, #btnDos{
+    cursor: pointer;
+    background-color: rgb(221, 199, 172);
+    border-radius: 0.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: rgb(35, 31, 25);
+    border: 2px solid rgb(100, 0, 8);
+    box-shadow: 4px 5px 3px rgb(100, 0, 8);
+    position: relative;
+    /* width: 9rem;
+    height: 3rem; */
+    padding: 1rem;
+}
+
+
+#btnRes:hover, #btnDos:hover{
+    background-color: rgb(255, 226, 191);
+    box-shadow: 2px 3px px rgb(100, 0, 8);
+}
+
+.modal-body img{
+    width: 53vw;
+    height: 69vh;
+    position: fixed;
+    top: 10%;
+    left: 4%;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 4px solid rgb(62, 0, 0);
+    border-radius: 10px ;
+    z-index: 10;
+    background-color: rgb(100, 0, 8);
+    width: 58vw;
+    height: 82vh;
+    max-width: 80%;cursor: auto;
+
+}
+
+.modal.active{
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.modal-header {
+    padding: 10px 15px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid rgb(62, 0, 0);
+    display: flex;
+}
+
+.modal-header .title { 
+    font-size: 1.25rem ;
+    font-weight: bold;
+    color: blanchedalmond;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.modal-header .close-button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: blanchedalmond;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.modal-body {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+}
+
+
+#overlay{
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.44);
+    pointer-events: none;
+    z-index: -1;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+    z-index: 9;
+}
+
+#nav{
+    position: absolute;
+    top: 1.5%;
+    left: 0.5%;
+    width: 400px;
+    height: 140px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    cursor: auto;
+}
+
+#dossier a{
+    background-color: rgb(0, 72, 48);
+    height: 30px;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+    text-decoration: none;
+}
+
+#dossier a:hover{
+    background-color: rgb(0, 32, 22);
+}
+
+#resoudre a{
+    background-color: rgb(119, 0, 40);
+    height: 30px;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+    text-decoration: none;
+}
+
+#resoudre a:hover{
+    background-color: rgb(56, 0, 19)
+}
+
+#button1{
+    width: 100%;
+    height: 120%;
+}
+
+#button2{
+    width: 100%;
+    height: 120%;
+}
+
+#button3{
+    width: 100%;
+    height: 120%;
+}
+
+#button4{
+    width: 100%;
+    height: 120%;
+}
+
+#button5{
+    width: 100%;
+    height: 120%;
+}
+
+#btnTas{
+    all: unset;
+    position: absolute;
+    top: 52%;
+    left: 54.5%;
+    width: 70px;
+    height: 60px;
+    border-radius: 300px;
+    transition: opacity 1s;
+    opacity: 0;
+
+}
+
+#btnMan{
+    all: unset;
+    position: absolute;
+    top: 26%;
+    left: 5%;
+    width: 70px;
+    height: 60px;
+    border-radius: 50px;
+    transition: opacity 1s;
+    opacity: 0;
+
+}
+
+#btnBur{
+    all: unset;
+    position: absolute;
+    top: 21%;
+    left: 79%;
+    width: 70px;
+    height: 60px;
+    border-radius: 50px;
+    transition: opacity 1s;
+    opacity: 0;
+
+}
+
+#btnBat{
+    all: unset;
+    position: absolute;
+    top: 86%;
+    left: 77%;
+    width: 70px;
+    height: 60px;
+    border-radius: 50px;
+    transition: opacity 1s;
+    opacity: 0;
+}
+
+#btnCor{
+    all: unset;
+    position: absolute;
+    top: 73%;
+    left: 6%;
+    width: 70px;
+    height: 60px;
+    border-radius: 50px;
+    transition: opacity 1s;
+    opacity: 0;
+}
+
+#btnTas:hover {
+    opacity: 1;
+}
+
+#btnMan:hover{
+    opacity: 1;
+    
+}
+
+#btnBur:hover{
+    opacity: 1;
+    
+}
+
+#btnBat:hover{
+    opacity: 1;
+    
+}
+
+#btnCor:hover{
+    opacity: 1;
+    
+}
+
+.hide {
+    display: none;
+}
+
+#hero {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.6s;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    top: 8%;
+    left: 21%;
+    width: 58vw;
+    height: 82vh;
+    max-width: 80%;
+}
+
+#hero.fin {
+    z-index: 10;
+    opacity: 1;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: 5px solid rgb(221, 199, 172);
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+#hero figure {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+#hero #replay{
+    all: unset;
+    cursor: pointer;
+    background-color: rgb(221, 199, 172);
+    border-radius: 0.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(35, 31, 25);
+    border: 2px solid rgb(100, 0, 8);
+    box-shadow: 4px 5px 3px rgb(100, 0, 8);
+    position: relative;
+        width: 12rem;
+        height: 5rem;
+    padding: 1rem;
+}
+
+#hero #replay:hover{
+    background-color: rgb(255, 226, 191);
+    box-shadow: 2px 3px px rgb(100, 0, 8);
+}
+
+#hero img{
+    width: 100%;
+}
+
+/* #answers{
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    max-width: 80%;
+}
+
+#answers #weapons{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0fr 1fr;
+    width: 100%;
+    
+}
+
+#answers #btnArm{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+    justify-items: center;
+}
+
+#answers #murderers {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0fr 1fr;
+    width: 100%;
+    
+}
+
+#answers #btnSus{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+    justify-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#answers img{
+    width: 20%;
+    height: 20%;
+}
+
+.weapons img{
+    width: 50%;
+    height: 50%;
+}
+
+.murderers{
+    width: 50%;
+    height: 50%;
+} */
+
+/* #resoudre .modal-active{
+    transform: translate(-50%, -50%) scale(1);
+    height: 77vh;
+    width: 38vw;
+} */
+
+.modal-bodyX{
+    padding: 10px 15px;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    width: 87%;
+}
+
+.modal-bodyX img{
+    all: unset;
+    width: 12vw ;
+    height: 21vh;
+}
+
+#answers{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 12%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 123%;
+    color: rgb(221, 199, 172);
+}
+
+#answers #weapons {
+    display: grid;
+    grid-template-rows: 0fr 1fr;
+    row-gap: 7%;
+}
+
+#answers #btnArm {
+    all: unset;
+    display: grid;
+    grid-template-columns: 0fr 0fr 0fr;
+    grid-template-rows: 0fr 0fr;
+    column-gap: 10%;
+    row-gap: 10%;
+}
+
+#answers #murderers{
+    display: grid;
+    grid-template-rows: 0fr 1fr;
+    row-gap: 7%;
+}
+
+#answers #btnSus {
+    all: unset;
+    display: grid;
+    grid-template-columns: 0fr 0fr 0fr;
+    grid-template-rows: 0fr 0fr;
+    column-gap: 10%;
+    row-gap: 10%;
+
+}
+
+#answers button{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1rem;
+            font-weight: bold;
+            background-color: rgb(221, 199, 172);
+            color: rgb(35, 31, 25);
+            border: 2px solid rgb(0, 0, 0);
+            box-shadow: 4px 5px 3px rgba(0, 0, 0, 0.419);
+            border-radius: 0.5rem;
+            height: 4vh;
+            transition: border-color 0.2s ease;
+            transition: background-color 0.2s ease-in-out;
+            transition: font-size 0.2s ease-in-out;
+}
+
+#answers button:hover{
+    color: rgb(198, 0, 0);
+    font-size: 1.5rem;
+    background-color: rgb(255, 226, 191);
+}
+
+#answers button:focus{
+    border: 4px solid rgb(255, 0, 0);
+    outline: none;
+}
+
+@media screen and (min-width: 385px) and (min-height: 844px) and (orientation: portrait) {
+    body{
+        transform: rotate(-90deg);
+        transform-origin: top left;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        margin-left: -100vh;
+        overflow: hidden;
+    }
+    
+    #nav {
+        scale: 20%;
+        top: 0;
+        left: 0;
+
+    }
+
+}

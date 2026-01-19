@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/chambre.css">
+    <title>Verite Cache - Jeux</title>
+    <link rel="shortcut icon" href="./imgs/logo.png" type="image">
+    <style>
+        html{
+            cursor: url('imgs/cursor.png'), auto;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <audio id="ambience" src="./sound/ambience.m4a" loop="loop" preload="auto" muted></audio>
+    <audio id="docopen" src="./sound/doc_open.m4a" preload="auto" muted></audio>
+    <audio id="docclose" src="./sound/doc_close.m4a" preload="auto" muted></audio>
+    
+    <section id="background">
+        <img src="./imgs/Roomwithdetails.png" alt="">
+    </section>
+    
+    
+    <figure id="nav">
+        <section id="outil">             
+            
+            <button data-modal-target="#dossier" id="btnDos">Ouvrir dossier</button>
+            <div class="modal" id="dossier">
+                <div class="modal-header">
+                    <div class="title">Dossier pour cette case</div>
+                    <button data-close-button class="close-button"> &times;</button>
+                </div>
+                
+                <div class="modal-body">
+                    <img src="imgs/dossiercomplet (1).png">
+                </div>
+                
+            </div>
+
+            
+            <button data-modal-target="#resoudre" id="btnRes">Resoudre le cas</button>
+            <div class="modal" id="resoudre">
+                <div class="modal-header">
+                    <div class="title">Qui a tué Leah? Avec qu'elle arme?</div>
+                    <button data-close-button class="close-button"> &times;</button>
+                </div>
+                
+                <div class="modal-bodyX">
+                    <section id="answers">
+                        <figure id="weapons">
+                            <h1>Armes</h1>
+                            <figure id="btnArm">
+                                <img src="./imgs/poison.png" alt="">
+                                <img src="./imgs/batte.png" alt="">
+                                <img src="./imgs/corde.png" alt="">
+                                <button id="poisson" class="weapon">
+                                    <p>Poison</p>
+                                </button>
+                                <button id="batte" class="weapon">
+                                    <p>Batte</p>
+                                </button>
+                                <button id="corde" class="weapon">
+                                    <p>Corde</p>
+                                </button>
+                            </figure>
+                        </figure>
+
+                        <figure id="murderers">
+                            <h1>Suspets</h1>
+                            <figure id="btnSus">
+                                <img src="./imgs/murderer1.png" alt="">
+                                <img src="./imgs/murderer2.png" alt="">
+                                <img src="./imgs/murderer3.png" alt="">
+                                <button id="louis" class="murderer">
+                                    <p>Louis</p>
+                                </button>
+                                <button id="martin" class="murderer">
+                                    <p>Martin</p>
+                                </but ton>
+                                <button id="susan" class="murderer">
+                                    <p>Susan</p>
+                                </button>
+                            </figure>
+                        </figure>
+                    </section>
+                </div>
+                
+            </div>
+            
+            <div id="overlay"> </div>
+        </section>
+
+        <div id="timer">2:00</div>
+    </figure>
+
+
+
+<section id="tasse" >
+    <button data-modal-target="#tasse-modal" id="btnTas"><img id="button1" src="./imgs/questionmarkbutton.png" alt=""></button>
+    <div class="modal" id="tasse-modal">
+        <div class="modal-header">
+            <div class="title">La Tasse</div>
+            <button data-close-button class="close-button"> &times;</button>
+        </div>
+                
+        <div class="modal-body">
+            <figure id="tassenormal" class="hide">
+                <img src="./imgs/rope_tear.png" alt="">
+            </figure>
+                    
+            <figure id="tassepoisson" class="hide">
+                <img src="./imgs/glass_poison.png" alt="">
+            </figure>
+        </div>
+                
+    </div>
+
+    <div id="overlay"> </div>    
+</section>
+
+<section id="manteaux">
+    <button data-modal-target="#manteaux-modal" id="btnMan"><img id="button2" src="./imgs/questionmarkbutton.png" alt=""></button>
+        <div class="modal" id="manteaux-modal">
+            <div class="modal-header">
+                <div class="title">Les Manteaux</div>
+                <button data-close-button class="close-button"> &times;</button>
+            </div>
+                
+            <div class="modal-body">
+                <figure id="manteauxlouispoison" class="hide">
+                    <img src="./imgs/coat_bf_tube_poison.png" alt="">
+                </figure>
+
+                <figure id="manteauxlouisbatte" class="hide">
+                    <img src="./imgs/coat_stepdad_blood.png" alt="">
+                </figure>
+
+                <figure id="manteauxlouiscorde" class="hide">
+                    <img src="./imgs/coat_stepdad_pieceofrope.png" alt="">
+                </figure>
+                    
+                <figure id="manteauxmartinpoison" class="hide">
+                    <img src="./imgs/poison_coats.png" alt="">
+                </figure>
+
+                <figure id="manteauxmartinbatte" class="hide">
+                    <img src="./imgs/ex_boyfriend_blood.png" alt="">
+                </figure>
+
+                <figure id="manteauxmartincorde" class="hide">
+                    <img src="./imgs/coat_exbf_pieceofrope.png" alt="">
+                </figure>
+                    
+                <figure id="manteauxsusanpoison" class="hide">
+                    <img src="./imgs/coat_bsf_poison.png" alt="">
+                </figure>
+
+                <figure id="manteauxsusanbatte" class="hide">
+                    <img src="./imgs/coat_bsf_blood.png" alt="">
+                </figure>
+
+                <figure id="manteauxsusancorde" class="hide">
+                    <img src="./imgs/susan_corde_bsf.png" alt="">
+                </figure>
+            </div>
+                
+        </div>
+        <div id="overlay"> </div>  
+</section>
+
+<section id="batte">
+    <button data-modal-target="#batte-modal" id="btnBat"><img id="button3" src="./imgs/questionmarkbutton.png" alt=""></button>
+        <div class="modal" id="batte-modal">
+
+            <div class="modal-header">
+                <div class="title">Le Batte</div>
+                <button data-close-button class="close-button"> &times;</button>
+            </div>
+                
+            <div class="modal-body">
+                <figure id="battenormal" class="hide">
+                    <img src="./imgs/normal_bat.png" alt="">
+                </figure>
+                    
+                <figure id="battesang" class="hide">
+                    <img src="./imgs/baseball_blood.png" alt="">
+                </figure>
+            </div>
+                
+        </div>
+        <div id="overlay"> </div>  
+</section>
+
+<section id="bureau">
+    <button data-modal-target="#bureau-modal" id="btnBur"><img id="button4" src="./imgs/questionmarkbutton.png" alt=""></button>
+            <div class="modal" id="bureau-modal">
+
+                <div class="modal-header">
+                    <div class="title">Le Bureau</div>
+                    <button data-close-button class="close-button"> &times;</button>
+                </div>
+                
+                <div class="modal-body">
+                   <figure id="bureaudiary" class="hide">
+                        <img src="./imgs/desk_journal.png" alt="">
+                    </figure>
+                    
+                    <figure id="bureaulettremenace" class="hide">
+                        <img src="./imgs/desk_threateningletter.png" alt="">
+                    </figure>
+                    
+                    <figure id="bureaulettreecole" class="hide">
+                        <img src="./imgs/desk_school_admission.png" alt="">
+                    </figure>
+                </div>
+                
+            </div>
+            <div id="overlay"> </div>  
+    
+</section>
+
+<section id="corde">
+    <button data-modal-target="#corde-modal" id="btnCor"><img id="button5" src="./imgs/questionmarkbutton.png" alt=""></button>
+        <div class="modal" id="corde-modal">
+
+            <div class="modal-header">
+            
+                <div class="title">Le Corde</div>
+                    <button data-close-button class="close-button"> &times;</button>
+                </div>
+                
+                <div class="modal-body">
+                     <figure id="cordenormal"  class="hide">
+                        <img src="./imgs/rope_normal (1).png" alt="">
+                    </figure>
+                    
+                    <figure id="cordesang"  class="hide">
+                        <img src="./imgs/rope_blood.png" alt="">
+                    </figure>
+                    
+                    <figure id="cordetear"  class="hide">
+                        <img src="./imgs/rope_tears.png" alt="">
+                    </figure>
+                </div>
+                
+            </div>
+            <div id="overlay"> </div>  
+   
+</section>
+
+
+<article id="hero">
+    <figure>
+        <img src=""/>
+        <section id="button">
+            <button id="replay">Jouer Encore</button>
+        </section>
+    </figure>
+</article>
+
+<script src="./js/chambre.js"></script>
+
+
+
+</body>
+</html>

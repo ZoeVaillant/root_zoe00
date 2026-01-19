@@ -1,0 +1,415 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+#inst {
+    background-color: #050a13;
+    position: absolute;
+    width: 100%;
+    margin: auto;
+}
+
+#inst nav{
+    background-color: #0d1c33;
+    width: 100%;
+    height: 10%;
+    padding: 1rem;
+    position: relative;
+    top: 0;
+
+}
+
+#inst nav a{
+    font-size: 1rem;
+    color: white;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    transition: font-size 0.2s ease-in-out;
+}
+#inst nav p{
+    padding-top: 0;
+    padding-left: 0;
+}
+
+#inst nav a:hover{
+    
+    font-size: 1.2rem;
+    color: rgb(178, 19, 19);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#links{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+h1 {
+    justify-content: center;
+    margin-bottom: 2rem;
+    text-align: center;
+    align-items: center;
+    font-size: 10vh;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(143, 15, 15);
+    margin-top: 4rem;
+    text-shadow: 0px 0px 15px rgba(178, 19, 19, 0.219);
+}
+
+#inst p {
+    font-size: 5vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: rgb(209, 182, 155);
+    /* padding-top: 2rem;
+    padding-left: 4rem; */
+
+}
+
+#inst footer{
+    background-color: rgb(100, 0, 8);
+    padding: 2rem;
+    bottom: 0;
+    width: 219vw;
+    height: 10%;
+    position: relative;
+}
+
+#inst footer p {
+    color: white;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-top: 0;
+    padding-left: 0;
+}
+
+a {
+    font-size: 5vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    /* padding: 4rem; */
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+#inst a:hover  {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: rgb(178, 19, 19);
+    /* padding: 4rem; */
+    text-decoration: none;
+}
+
+
+#info {
+    display: grid;
+    grid-template-rows: 0fr 0fr 0fr 0fr;
+    row-gap: 3rem;
+    margin: 3rem;
+}
+
+#instructions{
+    margin-bottom: 13rem;
+    margin: 4rem;
+}
+
+#instructions h2{
+    font-size: 2.5rem;
+    color: rgb(124, 13, 13);
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 2rem;
+}
+
+#instructions p{
+    font-size: 1.5rem;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#dossiers{
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    grid-template-rows: 1fr;
+    row-gap: 2rem;
+}
+
+#investigation{
+    display: grid;
+    /* grid-template-columns: 1fr 0fr; */
+    grid-template-rows: 1fr;
+    row-gap: 2rem;
+}
+
+#chronomètre{
+    display: grid;
+    /* grid-template-columns: 1fr 0fr; */
+    grid-template-rows: 1fr;
+    row-gap: 2rem;
+}
+
+#resoudre{
+    display: grid;
+    /* grid-template-columns: 1fr 0fr; */
+    grid-template-rows: 1fr;
+    row-gap: 2rem;
+}
+
+.imgs{
+    display: grid;
+    grid-template-columns: 0fr 0fr;
+    grid-template-rows: 1fr;
+    column-gap: 1rem;
+    align-items: center;
+    justify-content: left;
+}
+
+img{
+    width: 79vw;
+    height: 29vh;
+    border-radius: 10px;
+}
+
+button {
+    padding: 1.5rem;
+    background-color: rgba(209, 182, 155, 0.81);
+    color: rgb(35, 31, 25);
+    border: 2px solid rgb(100, 0, 8);
+    border-radius: 20px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(244, 211, 177);
+}
+
+#sources{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    /* justify-content: center;
+    align-items: center; */
+    width: 100%;
+    margin: 3rem;
+}
+
+#fin{
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-auto-rows: 1fr 1fr 1fr;
+    row-gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+#top a{
+    all: unset;
+    font-size: 2rem;
+    color: rgb(190, 164, 137);
+    transition: color 0.2s ease-in-out;
+}
+
+#top a:hover{
+    all: unset;
+    font-size: 2rem;
+    color: rgb(245, 213, 178);
+}
+
+@media screen and (min-width: 1000px){
+    h1 {
+            justify-content: center;
+            margin-bottom: 2rem;
+            text-align: center;
+            align-items: center;
+            font-size: 12vh;
+            font-family: 'Courier New', Courier, monospace;
+            color: rgb(143, 15, 15);
+            margin-top: 4rem;
+            text-shadow: 0px 0px 15px rgba(178, 19, 19, 0.219);
+        }
+        
+    #inst nav {
+            background-color: #0d1c33;
+            width: 100%;
+            height: 10%;
+            padding: 1rem;
+            position: relative;
+            top: 0;
+    
+        }
+
+        #links {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+        }
+    
+        #info {
+            display: grid;
+            grid-template-rows: 0fr 0fr 0fr 0fr;
+            row-gap: 3rem;
+            margin: 3rem;
+        }
+
+        #dossiers {
+            display: grid;
+            grid-template-rows: 0fr 0fr;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 2rem;
+        }
+
+        #investigation {
+            display: grid;
+            grid-template-rows: 0fr 0fr;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 2rem;
+        }
+
+        #chronomètre {
+            display: grid;
+            grid-template-rows: 0fr 0fr;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 2rem;
+        }
+
+        #resoudre {
+            display: grid;
+            grid-template-rows: 0fr 0fr;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 2rem;
+        }
+
+        .imgs {
+            display: grid;
+            grid-template-rows: 0fr 0fr;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 1rem;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img {
+            width: 20vw;
+            height: 25vh;
+            border-radius: 10px;
+        }
+                #inst footer {
+                    background-color: rgb(100, 0, 8);
+                    padding: 2rem;
+                    bottom: 0;
+                    width: 100vw;
+                    height: 10%;
+                    position: relative;
+                }
+}
+
+@media screen and (min-width: 1800px) {
+    h1 {
+        justify-content: center;
+        margin-bottom: 2rem;
+        text-align: center;
+        align-items: center;
+        font-size: 12vh;
+        font-family: 'Courier New', Courier, monospace;
+        color: rgb(143, 15, 15);
+        margin-top: 4rem;
+        text-shadow: 0px 0px 15px rgba(178, 19, 19, 0.219);
+    }
+
+    #inst nav {
+        background-color: #0d1c33;
+        width: 100%;
+        height: 10%;
+        padding: 1rem;
+        position: relative;
+        top: 0;
+
+    }
+
+    #links {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    }
+
+    #info {
+        display: grid;
+        grid-template-rows: 0fr 0fr 0fr 0fr;
+        row-gap: 3rem;
+        margin: 3rem;
+    }
+
+    #dossiers {
+        display: grid;
+        grid-template-rows: 0fr 0fr;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+
+    #investigation {
+        display: grid;
+        grid-template-rows: 0fr 0fr;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+
+    #chronomètre {
+        display: grid;
+        grid-template-rows: 0fr 0fr;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+
+    #resoudre {
+        display: grid;
+        grid-template-rows: 0fr 0fr;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+
+    .imgs {
+        display: grid;
+        grid-template-rows: 0fr 0fr;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    img {
+        width: 20vw;
+        height: 25vh;
+        border-radius: 10px;
+    }
+
+    #inst footer {
+        background-color: rgb(100, 0, 8);
+        padding: 2rem;
+        bottom: 0;
+        width: 100vw;
+        height: 10%;
+        position: relative;
+    }
+
+    
+}

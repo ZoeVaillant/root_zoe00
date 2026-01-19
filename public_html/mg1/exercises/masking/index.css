@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(45, 11, 107);
+    font-family: Montserrat Alternates;
+    background-image: url(../img/motiongraphics\(background\).webp);
+    /*https: //www.w3schools.com/cssref/pr_background-position.php*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+header {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+h1 {
+    font-size: 80px;
+    text-align: center;
+    color: white;
+}
+
+#content figure{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+    justify-self: center;
+    align-items: center;
+    justify-content: center ;
+}
+
+img{
+    position: relative;
+    justify-self: center;
+    max-width: 500px;
+    width: 100%;
+    height: 300px;
+    justify-self: center
+}
+
+iframe{
+    max-width: 500px;
+    width: 100%;
+    height: 400px;
+}
+
+footer {
+    /*https: //stackoverflow.com/questions/13609006/floating-footer-always-on-the-bottom-and-visible*/
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.908);
+}
+
+#navigation {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 78px 1fr 1fr 1fr 78px;
+    column-gap: 10px;
+    place-self: anchor-center;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+
+#navigation figure {
+    position: relative;
+    justify-items: center;
+}
+
+#navigation a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #5231BE;
+    opacity: 0.5;
+    transition: opacity 0.6s;
+    font-size: 15px;
+}
+
+#navigation a:hover {
+    opacity: 1;
+
+}
+
+/* @media screen and (min-width: 1000px){ */
+    /* iframe{
+        width: 200px;
+        height: 200px;
+    }
+} */
+
+@media screen and (min-width: 1500px) {
+    #content figure{
+    display: grid;
+    grid-template-rows: 0fr;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 70px;
+    justify-self: center;
+}
+    img{
+        min-width: 700px;
+        width: 100%;
+        height: 600px;
+    }   
+
+    iframe{
+        min-width: 700px;
+        width: 100%;
+        height: 600px;
+    }
+    footer {
+        height: 90px;
+    }
+
+    #navigation a {
+        font-size: 25px;
+
+    }
+
+    #navigation {
+
+        grid-template-columns: 78px 1fr 1fr 1fr 78px;
+        column-gap: 40px;
+
+    }
+
+
+}
+
+@media screen and (min-width: 2100px) {
+    #content figure{
+    display: grid;
+    grid-template-rows: 0fr;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 70px;
+    justify-self: center;
+}
+
+    img{
+        min-width: 1000px;
+        width: 100%;
+        height: 600px;
+    }   
+
+    iframe{
+        min-width: 1000px;
+        width: 100%;
+        height: 600px;
+    }
+
+
+    footer {
+        height: 90px;
+    }
+
+    #navigation a {
+        font-size: 25px;
+
+    }
+
+    #navigation {
+
+        grid-template-columns: 78px 1fr 1fr 1fr 78px;
+        column-gap: 40px;
+
+    }
+
+}
