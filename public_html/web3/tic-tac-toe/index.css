@@ -31,6 +31,8 @@ header{
     place-items: center;
     font-size: 3rem;
     font-weight: 900;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 div{
@@ -45,6 +47,10 @@ div{
     text-align: center;
     font-size: 30px;
     margin-bottom: 20px;
+}
+
+#message img{
+    max-width: 60px;
 }
 
 button{
